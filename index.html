@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive TensorFlow.js Classifier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="controls">
+            <button id="toggleClass" class="toggle-class blue">Current Class: Blue</button>
+            <input id="epochInput" type="number" placeholder="Epochs (e.g., 1000)" />
+            <button id="trainButton" class="primary-btn">Start Training</button>
+            <button id="restartButton" class="secondary-btn">Restart</button>
+        </div>
+        <p id="statusDisplay">Click to add data points, then train the model.</p>
+        <canvas id="canvas" width="500" height="500"></canvas>
+    </div>
+
+    <div class="footer">
+        Made by <a href="https://github.com/Kooroshoo/Interactive-ML-Classifier">Kooroshoo</a>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="app.js"></script>
+</body>
+</html>
